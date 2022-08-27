@@ -1,0 +1,337 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: #6a78ff;
+	display: flex ;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	margin: 50px auto;
+	display: grid;
+	background: #fff;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 35px 55px rgba(0, 0, 0, 0, 1);
+
+
+}
+
+.container .left-side {
+	position: relative;
+	background: #003147;
+	padding: 40px;
+}
+
+
+.pro-text {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0, 2);
+
+
+}
+
+.pro-text .imagebx {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 40px;
+	border-color: #716aff;
+	border: 2px solid #716aff;
+	overflow: hidden;
+
+
+}
+
+.pro-text .imagebx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.pro-text h2 {
+	color: #eaffff;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 500;
+	line-height: 1.4em;
+}
+
+.pro-text span {
+	font-size: 0.8em;
+	font-weight: 300;
+}
+/* .contact info */
+.contactinfo {
+	padding-top: 40px;
+
+}
+.title {
+	color: #bfbfff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+
+}
+.contactinfo ul {
+	position: relative;
+}
+.contactinfo ul li {
+	position: relative;
+	list-style: none;
+	margin: 10px o;
+	padding: 5px;
+	cursor: pointer;
+
+}
+.contactinfo ul li .icon {
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: #2babff;
+}
+.contactinfo ul li span {
+	color: #fff;
+	font-weight: 300;
+}
+/* contactinfo education */
+.contactinfo.education li {
+	margin-bottom: 15px;
+}
+.contactinfo.education h5 {
+	color: #2babff;
+	font-weight: 500;
+}
+.contactinfo.education h4:nth-child(2) {
+color: #fff;
+font-weight: 600;
+	
+
+}
+.contactinfo.education h4 {
+color: bisque;
+font-weight: 400;
+}
+/* language */
+.language span.percent{
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: #111;
+	display: block;
+	margin-top: 10px;
+}
+.language .percent div{
+	position: absolute;
+	top: 0;
+	left: o;
+	height: 100%;
+	background: #4f4fb9;
+}
+/* right side cv */
+.container .right-side {
+	position: relative;
+	background: #fff;
+	padding: 40px;
+}
+.about{
+	margin-bottom: 50px;
+	
+}
+.about:last-child{
+	margin-bottom: 0;
+}
+.title2{
+	color: #003147;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	    position: relative;
+
+}
+.title2::after{
+	content: "";
+    position: absolute;
+    width:55%;
+    height: 0.2rem;
+    background-color: #ccc;
+    border-radius: 12px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+p {
+color: #333;	
+}
+.about .box {
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+	
+}
+.about .box .year_company{
+	min-width: 150px;
+	border-left: 3px solid #0990ff;
+	border-radius: 5px;
+	padding-left: 5px; 
+}
+.about .box .year_company h5{
+	text-transform: uppercase;
+	color: darkgrey;
+	font-weight: 600;
+}
+.about .box .text h4{
+	color: #0990ff;
+	font-size: 20px;
+	font-weight: 600;
+  text-transform: uppercase;
+}
+.skils .box{
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 150px 1fr ;
+	justify-content: center;
+	align-items: center;
+
+}
+.skils .box h4{
+	text-transform: uppercase;
+	color: #222;
+	font-weight: 500;
+}
+.skils .box .percent{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #111;
+	
+}
+
+.skils .box .percent div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	border-radius: 10px;
+	background-color: #2babff;
+}
+.interest ul {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+.interest ul li{
+	list-style: none;
+	color: #333;
+	font-weight: 500;
+	margin: 10px 0 ;
+	
+}
+.interest ul li .fa{
+	color: aquamarine;
+	font-size: 18px;
+	width: 20px;
+}
+	
+
+@media screen and (max-width: 1000px) {
+  .container
+	{
+	margin: 10px;
+		grid-template-columns: repeat(1,1fr);
+	}
+	
+	.interest ul {
+		grid-template-columns: repeat(2,1fr);
+	}
+	.pro-text .imagebx{
+		height: 250px;
+		width: 250px;
+	}
+	.pro-text h2{
+		font-size: 33px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.about .box {
+		flex-direction: column;
+	}
+	.about .box .year_company{
+		min-width: 150px;
+		margin-bottom: 5px;
+	}
+	.interest ul {
+		grid-template-columns: repeat(1,1fr);
+	}
+	
+}
+
+/*  T  E  S  t 2 */
+
+}
+@media screen and (max-width:1200px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:700px){
+    .profile img{
+        width: 60%;
+    }
+}
+@media screen and (max-width:390px){
+    .name{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
